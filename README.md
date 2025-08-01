@@ -49,17 +49,17 @@ inventory-management/<br>
 ```bash
 git clone https://github.com/your-username/police-inventory-management.git
 ```
-2. Import the Database
+### 2. Import the Database
 Import inventory_db.sql into MySQL using phpMyAdmin or MySQL CLI.
 
-3. Configure Database
+### 3. Configure Database
 Open config.php and set your database credentials:<br>
 $host = 'localhost';<br>
 $user = 'root';<br>
 $password = '';<br>
 $database = 'inventory_db';<br>
 
-4. Run the Project
+### 4. Run the Project
 Start XAMPP/LAMP server and open:<br>
 http://localhost/inventory-management
 

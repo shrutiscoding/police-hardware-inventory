@@ -1,58 +1,65 @@
-#Police Department Hardware Inventory Management System
+<h1 align="center" style="color:#2c3e50; font-weight:bold;">
+  Police Department Hardware Inventory Management System
+</h1>
 
-Overview
-A web-based and mobile-compatible inventory management system developed to streamline the tracking of hardware assets in a police department. This project replaces manual methods, ensuring real-time updates, accurate records, and efficient audits of police equipment.
+<p align="center">
+  <em>A comprehensive web and mobile-based system for managing police hardware assets with real-time updates, automated reporting, and secure access.</em>
+</p>
 
-Features
-Real-Time Inventory Management
+---
 
-Add, update, allocate, and dispose of hardware assets.
+## 🚀 Features
 
-Role-Based Access
+- **Real-Time Inventory Management** – Track hardware allocation, updates, and disposal.  
+- **Role-Based Authentication** – Secure login for admins and department staff.  
+- **Automated Reports** – Generate PDF and Excel reports for audits.  
+- **Email Notifications** – Integrated with PhpMailer for instant updates.  
+- **Search & Filter** – Quickly retrieve equipment details.  
+- **Responsive UI** – Optimized for both desktop and mobile devices.  
 
-Secure login for admin and department users.
+---
 
-Automated Reports
+## 🛠 Tech Stack
 
-Generate PDF and Excel reports for audits and equipment history.
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+  <img src="https://img.shields.io/badge/Frontend-HTML%2FCSS%2FJS-blue" />
+  <img src="https://img.shields.io/badge/Backend-PHP-green" />
+  <img src="https://img.shields.io/badge/Database-MySQL-orange" />
+  <img src="https://img.shields.io/badge/Email-PHPMailer-purple" />
+</div>
 
-Email Notifications
+---
 
-Integrated PhpMailer for sending status updates.
+## 📂 Project Structure
 
-Search & Filter
+inventory-management/<br>
+│── assets/ # CSS, JS, images<br>
+│── config/ # Database configuration<br>
+│── modules/ # Core inventory modules<br>
+│── reports/ # PDF/Excel report generation<br>
+│── index.php # Landing page<br>
+│── login.php # Authentication<br>
+│── README.md # Project documentation<br>
 
-Quick retrieval of equipment details.
+---
 
-Responsive Design
+## ⚙️ Installation & Setup
 
-Optimized for both desktop and mobile devices.
-
-Tech Stack
-Frontend: HTML, CSS, JavaScript, Bootstrap
-
-Backend: PHP
-
-Database: MySQL
-
-Additional Tools: PhpMailer for email notifications
-
-Project Highlights
-Reduced equipment loss and improved resource planning for the department.
-
-Replaced manual logs with real-time digital updates.
-
-Simplified auditing process and enhanced transparency.
-
-Setup Instructions
-Clone the repository:
-
-bash
-
+### 1. Clone the Repository
+```bash
 git clone https://github.com/your-username/police-inventory-management.git
+```
+2. Import the Database
+Import inventory_db.sql into MySQL using phpMyAdmin or MySQL CLI.
 
-Import the SQL database file (inventory_db.sql) into MySQL.
-Configure database credentials in config.php.
+3. Configure Database
+Open config.php and set your database credentials:<br>
+$host = 'localhost';<br>
+$user = 'root';<br>
+$password = '';<br>
+$database = 'inventory_db';<br>
 
-Start local server (e.g., XAMPP/LAMP) and access the project via:
+4. Run the Project
+Start XAMPP/LAMP server and open:<br>
 http://localhost/inventory-management
+
